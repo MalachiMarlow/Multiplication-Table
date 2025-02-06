@@ -5,9 +5,15 @@ Option Strict On
 Module Multiplication_Table
 
     Sub Main()
-        For i As Integer 1 To 10 Step 1
+        Dim userInput As Integer
+
+        Console.WriteLine("Please enter a number.")
+        Console.ReadLine()
+
+        For i As Integer = 1 To userInput Step 1
             Console.WriteLine(i)
-            Console.WriteLine()
+        Next
+        Console.WriteLine(StrDup(80, "*"))
 
 
 
